@@ -1,0 +1,5 @@
+{
+  "name": "Creative Portfolio",
+  "description": "An interactive and creative personal portfolio website featuring an AI-powered chat assistant built with React and the Gemini API.",
+  "requestFramePermissions": []
+}
