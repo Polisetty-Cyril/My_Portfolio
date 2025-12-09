@@ -4,15 +4,15 @@
 
 export const PORTFOLIO_DATA = {
   // === Personal Information ===
-  name: "Nicol Rider",
+  name: "Polisetty Cyril",
   title: "Creative Developer & UI/UX Enthusiast",
   profileImage: "https://i.imgur.com/8I2tQ61.jpeg", // A professional, friendly headshot. Replace with your image URL.
   about: "I'm a passionate developer with a knack for creating beautiful, intuitive, and highly functional user interfaces. I love bringing ideas to life, from the initial concept in Figma to a fully deployed application. Let's build something amazing together.",
   
   // === Contact & Social Media ===
   contact: {
-    phone: "123-456-7890",
-    email: "info@mysite.com",
+    phone: "8125624037",
+    email: "cyrilp4107@gmail.com",
   },
   socials: {
     linkedin: "https://www.linkedin.com/", // Add your LinkedIn profile URL
@@ -96,17 +96,17 @@ export const PORTFOLIO_DATA = {
   // === AI Chat Assistant Settings ===
   aiChat: {
     starterPrompts: [
-      "What are Nicol's key skills?",
-      "Tell me about her experience at Innovate Inc.",
-      "What are her notable achievements?",
+      "What are Cyril's key skills?",
+      "Tell me about his experience at Innovate Inc.",
+      "What are his notable achievements?",
     ],
     // This context is fed to the AI to answer questions about you.
     // It's automatically built from the resume data above, so you only need to edit it there.
     bioContext: `
-      You are Nicol Rider's personal AI assistant. Your goal is to answer questions from recruiters and potential collaborators based on the information below. Be friendly, professional, and concise.
+      You are Cyril's personal AI assistant. Your goal is to answer questions from recruiters and potential collaborators based on the information below. Be friendly, professional, and concise.
 
-      About Nicol Rider:
-      - Name: ${"Nicol Rider"}
+      About Polisetty Cyril:
+      - Name: ${"Polisetty Cyril"}
       - Role: ${"Creative Full-Stack Developer"}
       - Summary: ${"Highly motivated and driven computer science student seeking internship opportunities to enhance practical software development skills. Proficient in Python, Java, and C++, with a strong coding background and a passion for innovation."}
 
