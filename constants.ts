@@ -11,7 +11,7 @@ export const PORTFOLIO_DATA = {
   
   // === Contact & Social Media ===
   contact: {
-    phone: "8125624037",
+    phone: "+91-8125624037",
     email: "cyrilp4107@gmail.com",
   },
   socials: {
@@ -48,9 +48,9 @@ export const PORTFOLIO_DATA = {
     education: [
       {
         degree: "Bachelor of Science in Computer Science",
-        school: "University of Dreams",
-        date: "2020 - 2024",
-        details: "Graduated with Honors (GPA: 3.8)",
+        school: "Keshav Memorial College of Engineering",
+        date: "2023 - 2027",
+        details: "Currently in 3rd Year | CGPA: 7.8",
       },
     ],
     skills: [ "Python", "Java", "C++", "JavaScript", "React", "Node.js", "Problem-Solving", "Software Development" ],
