@@ -1,7 +1,7 @@
 import React from 'react';
 import { PORTFOLIO_DATA } from '../constants';
 import { LinkedinIcon } from './icons/LinkedinIcon';
-import { TwitterIcon } from './icons/TwitterIcon';
+import { GithubIcon } from './icons/GithubIcon';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           <h3 className="font-bold text-stone-800 mb-2">Follow Me</h3>
           <div className="flex space-x-4">
             <a href={PORTFOLIO_DATA.socials.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors"><LinkedinIcon /></a>
-            <a href={PORTFOLIO_DATA.socials.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors"><TwitterIcon /></a>
+            <a href={PORTFOLIO_DATA.socials.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-stone-900 transition-colors"><GithubIcon /></a>
           </div>
         </div>
         <div className="md:text-right">

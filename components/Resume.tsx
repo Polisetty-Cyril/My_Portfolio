@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PORTFOLIO_DATA } from '../constants';
 import { ArrowLeftIcon } from './icons/ArrowLeftIcon';
+import { DownloadIcon } from './icons/DownloadIcon';
 
 interface ResumeProps {
   onBack: () => void;
@@ -105,6 +106,35 @@ const Resume: React.FC<ResumeProps> = ({ onBack }) => {
                    <p className="text-stone-600">{ach.description}</p>
                  </div>
                ))}
+            </ResumeSection>
+
+            <ResumeSection title="Download Resume">
+              <motion.a
+                href="/Polisetty_Cyril_Resume.pdf"
+                download="Polisetty_Cyril_Resume.pdf"
+                className="flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all duration-300"
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(245, 158, 11, 0.4)"
+                }}
+                whileTap={{ scale: 0.95 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <motion.div
+                  animate={{ y: [0, 5, 0] }}
+                  transition={{ 
+                    repeat: Infinity, 
+                    duration: 1.5,
+                    ease: "easeInOut"
+                  }}
+                >
+                  <DownloadIcon className="w-6 h-6" />
+                </motion.div>
+                <span className="text-lg">Download Full Resume (PDF)</span>
+              </motion.a>
             </ResumeSection>
 
             <ResumeSection title="Reach Out for Opportunities">
