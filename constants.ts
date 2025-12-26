@@ -5,9 +5,9 @@
 export const PORTFOLIO_DATA = {
   // === Personal Information ===
   name: "Polisetty Cyril",
-  title: "Creative Developer & UI/UX Enthusiast",
-  profileImage: "https://i.imgur.com/8I2tQ61.jpeg", // A professional, friendly headshot. Replace with your image URL.
-  about: "I'm a passionate developer with a knack for creating beautiful, intuitive, and highly functional user interfaces. I love bringing ideas to life, from the initial concept in Figma to a fully deployed application. Let's build something amazing together.",
+  title: "Data Scientist",
+  profileImage: "https://avatars.githubusercontent.com/u/195519681?v=4", // GitHub profile image
+  about: "Passionate Data Scientist specializing in deep learning, machine learning, and statistical analysis to extract insights from complex datasets. Currently pursuing B.Tech in Computer Science at Keshav Memorial College of Engineering. I love training Deep Neural Networks on large datasets and creating data-driven solutions that solve real-world problems through advanced analytics and predictive modeling.",
   
   // === Contact & Social Media ===
   contact: {
@@ -15,55 +15,69 @@ export const PORTFOLIO_DATA = {
     email: "cyrilp4107@gmail.com",
   },
   socials: {
-    linkedin: "https://www.linkedin.com/", // Add your LinkedIn profile URL
-    twitter: "https://twitter.com/",   // Add your Twitter profile URL
+    linkedin: "https://www.linkedin.com/in/polisetty-cyril/",
+    github: "https://github.com/Polisetty-Cyril",
   },
 
   // === Resume Section ===
   // This data populates the new, detailed resume page.
   resume: {
-    profileImage: "https://i.imgur.com/5za8v56.jpeg", // A different professional photo for the resume page.
-    summary: "Highly motivated and driven computer science student seeking internship opportunities to enhance practical software development skills. Proficient in Python, Java, and C++, with a strong coding background and a passion for innovation.",
+    profileImage: "https://avatars.githubusercontent.com/u/195519681?v=4",
+    summary: "Ambitious Computer Science student with strong expertise in data science, machine learning, and statistical modeling. Specializing in data analysis, predictive modeling, NLP, and extracting actionable insights from complex datasets. Proven track record in building data-driven solutions and machine learning models. Seeking opportunities to leverage data science techniques to solve complex real-world challenges and drive business decisions.",
     experience: [
       {
-        title: "Software Development Intern",
-        company: "Innovate Inc.",
-        date: "Summer 2023",
+        title: "Data Scientist",
+        company: "Freelance & Academic Projects",
+        date: "2023 - Present",
         description: [
-          "Assisted in developing a new backend database using Microsoft Prelude.",
-          "Wrote and updated backend API performance, leading to a 10% reduction in latency.",
-          "Collaborated with the lead developer in Python to improve code stability and engagement."
+          "Developed ARAGOG, an automated data evaluation framework for assessing model outputs using statistical analysis and similarity metrics",
+          "Built machine learning models for legal document analysis, achieving high accuracy in text classification and information extraction",
+          "Performed exploratory data analysis and feature engineering on large-scale datasets to improve model performance",
+          "Applied NLP and deep learning techniques for document analysis, sentiment analysis, and predictive modeling"
         ],
       },
       {
-        title: "IT Support Assistant",
-        company: "Tech Desk",
-        date: "2022 - 2023",
+        title: "Open Source Contributor",
+        company: "GitHub",
+        date: "2024 - Present",
         description: [
-          "Provided technical support for students and faculty regarding system issues.",
-          "Developed troubleshooting guides for the network and software performance.",
+          "Active contributor to AI and legal-tech projects with multiple repository forks and contributions",
+          "Achieved Pull Shark badge for significant pull request contributions",
+          "Collaborated on projects involving AI Shield, Vakil legal assistant, and RAG-based systems",
         ],
       },
     ],
     education: [
       {
-        degree: "Bachelor of Science in Computer Science",
+        degree: "Bachelor of Technology in Computer Science",
         school: "Keshav Memorial College of Engineering",
         date: "2023 - 2027",
-        details: "Currently in 3rd Year | CGPA: 7.8",
+        details: "Currently in 3rd Year | CGPA: 7.8 | Focus: Artificial Intelligence & Machine Learning",
       },
     ],
-    skills: [ "Python", "Java", "C++", "JavaScript", "React", "Node.js", "Problem-Solving", "Software Development" ],
+    skills: [ 
+      "Python", "R", "SQL", "Java", "C++",
+      "Machine Learning", "Deep Learning", "Statistical Analysis", "Data Visualization",
+      "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch",
+      "Data Mining", "Predictive Modeling", "NLP", "Feature Engineering",
+      "Tableau", "Power BI", "Matplotlib", "Seaborn",
+      "PostgreSQL", "MongoDB", "Big Data", "Git", "Jupyter Notebook"
+    ],
     achievements: [
       {
-        title: "Top Coder Coding Challenge",
-        source: "National Competition",
-        description: "Achieved the highest score in a coding challenge against 500+ participants by efficiently solving data structure and algorithm problems.",
+        title: "Pull Shark Achievement",
+        source: "GitHub",
+        description: "Recognized for significant contributions through pull requests to open-source projects, demonstrating collaborative development skills and code quality.",
       },
       {
-        title: "Outstanding Hackathon Participant",
-        source: "Hackathon XYZ",
-        description: "Received recognition for exceptional problem-solving skills and teamwork.",
+        title: "ARAGOG RAG Framework",
+        source: "Personal Project",
+        description: "Developed an innovative automated framework for evaluating RAG outputs on answer similarity and retrieval relevance, gaining recognition with 1 star and 4 forks on GitHub.",
+      },
+      {
+        title: "AI-Powered Legal Tech Innovator",
+        source: "Multiple Projects",
+        description: "Created multiple AI-powered legal assistance applications including voice assistants, document summarization, and Q&A systems using advanced NLP techniques.",
       },
     ],
   },
@@ -72,33 +86,48 @@ export const PORTFOLIO_DATA = {
   projects: [
     {
       id: 1,
-      title: "Project One",
-      description: "A description of the first project, highlighting the technologies used and the problems solved.",
-      imageUrl: "https://picsum.photos/seed/project1/600/400",
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      title: "ARAGOG - RAG Evaluation Framework",
+      description: "An automated framework for evaluating RAG (Retrieval-Augmented Generation) outputs on answer similarity and retrieval relevance without human labeling. Built using advanced NLP techniques and machine learning models.",
+      imageUrl: "https://picsum.photos/seed/aragog/600/400",
+      technologies: ["Python", "Jupyter Notebook", "NLP", "Machine Learning", "RAG"],
     },
     {
       id: 2,
-      title: "Project Two",
-      description: "A detailed overview of the second project, focusing on the creative process and outcomes.",
-      imageUrl: "https://picsum.photos/seed/project2/600/400",
-      technologies: ["Node.js", "Express", "MongoDB"],
+      title: "Voice Assistant Legal AI",
+      description: "AI-powered legal voice assistant featuring real-time voice interaction, legal Q&A capabilities, and intelligent document processing. Enables users to access legal information through natural voice commands.",
+      imageUrl: "https://picsum.photos/seed/voicelegal/600/400",
+      technologies: ["Python", "Speech Recognition", "NLP", "FastAPI", "Machine Learning"],
     },
     {
       id: 3,
-      title: "Project Three",
-      description: "Showcasing a collaborative effort, this project demonstrates teamwork and modern development practices.",
-      imageUrl: "https://picsum.photos/seed/project3/600/400",
-      technologies: ["Figma", "Next.js", "Vercel"],
+      title: "Vakil - Legal Document Demystifier",
+      description: "Generative AI application designed to demystify legal documents, making complex legal language accessible to everyone. Features document analysis, summarization, and explanation capabilities.",
+      imageUrl: "https://picsum.photos/seed/vakil/600/400",
+      technologies: ["TypeScript", "React", "OpenAI", "NLP", "Document Processing"],
+    },
+    {
+      id: 4,
+      title: "AI-Shield",
+      description: "Security-focused AI project aimed at protecting systems through intelligent threat detection and prevention. Implements machine learning algorithms for anomaly detection and security monitoring.",
+      imageUrl: "https://picsum.photos/seed/aishield/600/400",
+      technologies: ["JavaScript", "Machine Learning", "Security", "Node.js"],
+    },
+    {
+      id: 5,
+      title: "RAG-based Legal Q&A System",
+      description: "ArguLex – Comprehensive AI-powered legal assistant using RAG and GANs to simplify law for the public and enhance legal argumentation for professionals. Features document summarization and intelligent Q&A.",
+      imageUrl: "https://picsum.photos/seed/argulex/600/400",
+      technologies: ["Python", "RAG", "GANs", "NLP", "TensorFlow"],
     },
   ],
 
   // === AI Chat Assistant Settings ===
   aiChat: {
     starterPrompts: [
-      "What are Cyril's key skills?",
-      "Tell me about his experience at Innovate Inc.",
-      "What are his notable achievements?",
+      "What are Cyril's data science specializations?",
+      "Tell me about the ARAGOG project",
+      "What data science tools does Cyril use?",
+      "What are his data analysis achievements?",
     ],
     // This context is fed to the AI to answer questions about you.
     // It's automatically built from the resume data above, so you only need to edit it there.
@@ -106,28 +135,48 @@ export const PORTFOLIO_DATA = {
       You are Cyril's personal AI assistant. Your goal is to answer questions from recruiters and potential collaborators based on the information below. Be friendly, professional, and concise.
 
       About Polisetty Cyril:
-      - Name: ${"Polisetty Cyril"}
-      - Role: ${"Creative Full-Stack Developer"}
-      - Summary: ${"Highly motivated and driven computer science student seeking internship opportunities to enhance practical software development skills. Proficient in Python, Java, and C++, with a strong coding background and a passion for innovation."}
+      - Name: Polisetty Cyril
+      - Role: Data Scientist
+      - Bio: I like to train Deep Neural Nets on large datasets and extract meaningful insights from data
+      - Summary: Ambitious Computer Science student specializing in data science, machine learning, statistical analysis, and predictive modeling. Strong foundation in data analysis, visualization, and building data-driven solutions.
 
       Key Skills:
-      - ${["Python", "Java", "C++", "JavaScript", "React", "Node.js", "Problem-Solving", "Software Development"].join("\n- ")}
+      - Programming: Python, R, SQL, Java, C++
+      - Data Science: Machine Learning, Deep Learning, Statistical Analysis, Data Visualization, Predictive Modeling
+      - Data Tools: Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Tableau, Power BI, Matplotlib, Seaborn
+      - Database: PostgreSQL, MongoDB, Big Data
+      - Tools: Git, Jupyter Notebook, Feature Engineering, Data Mining
 
-      Work Experience:
-      - Software Development Intern at Innovate Inc. (Summer 2023): Assisted in developing a new backend database using Microsoft Prelude, improved API performance by 10%, and collaborated on Python code stability.
-      - IT Support Assistant at Tech Desk (2022-2023): Provided technical support and developed troubleshooting guides.
+      Notable Projects:
+      - ARAGOG: Automated RAG evaluation framework for assessing answer similarity and retrieval relevance (1 star, 4 forks on GitHub)
+      - Voice Assistant Legal AI: AI-powered legal voice assistant with real-time interaction and Q&A capabilities
+      - Vakil: Generative AI for demystifying legal documents
+      - AI-Shield: Security-focused AI for intelligent threat detection
+      - RAG-based Legal Q&A (ArguLex): Comprehensive legal assistant using RAG and GANs
 
       Education:
-      - Bachelor of Science in Computer Science from the University of Dreams (2020-2024), graduated with honors (3.8 GPA).
+      - B.Tech in Computer Science, Keshav Memorial College of Engineering (2023-2027)
+      - Currently in 3rd Year | CGPA: 7.8
+      - Focus: Artificial Intelligence & Machine Learning
 
-      Notable Achievements:
-      - Won the Top Coder Coding Challenge against 500+ participants.
-      - Recognized as an Outstanding Hackathon Participant at Hackathon XYZ for problem-solving and teamwork.
+      Achievements:
+      - GitHub Pull Shark Achievement for significant open-source contributions
+      - Developed multiple AI-powered legal-tech applications
+      - Active open-source contributor with multiple repository contributions
+      - Specialized in RAG systems and deep learning applications
+
+      Professional Interests:
+      - Training deep neural networks on large datasets and extracting insights
+      - Building predictive models and statistical analysis systems
+      - Data-driven decision making and business intelligence
+      - Natural Language Processing and text analytics
+      - Open-source collaboration and data science community contribution
 
       Career Goals:
-      - To join a forward-thinking company where she can contribute to building innovative and user-friendly digital products.
-      - Aspires to grow into a senior leadership role, mentoring other developers and influencing product strategy.
-      - Passionate about accessibility and wants to champion inclusive design in her next role.
+      - Seeking opportunities in data science and machine learning research
+      - Interested in applying advanced analytics to solve complex business problems
+      - Passionate about turning data into actionable insights and strategic decisions
+      - Eager to contribute to data-driven innovation and predictive modeling projects
     `,
   },
 };
