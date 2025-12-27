@@ -19,7 +19,7 @@ export const PORTFOLIO_DATA = {
     github: "https://github.com/Polisetty-Cyril",
   },
 
-  // === Resume Section ===
+  // === Resume Section ===t 
   // This data populates the new, detailed resume page.
   resume: {
     profileImage: "https://avatars.githubusercontent.com/u/195519681?v=4",
