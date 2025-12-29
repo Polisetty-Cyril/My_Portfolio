@@ -16,10 +16,10 @@ const navItems: { id: Section; label: string }[] = [
 
 const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
   return (
-    <header className="fixed top-4 left-0 right-0 z-40 flex justify-center">
-      <div className="flex items-center justify-between gap-8 backdrop-blur-md bg-white/50 border border-white/60 shadow-md rounded-full px-6 py-2">
+    <header className="fixed top-2 sm:top-4 left-0 right-0 z-40 flex justify-center px-2 sm:px-4">
+      <div className="flex items-center justify-between gap-2 sm:gap-4 md:gap-8 backdrop-blur-md bg-white/50 border border-white/60 shadow-md rounded-full px-3 sm:px-4 md:px-6 py-2 max-w-full">
         <motion.div 
-          className="text-xl font-bold cursor-pointer text-stone-800 hidden sm:block"
+          className="text-base sm:text-lg md:text-xl font-bold cursor-pointer text-stone-800 hidden md:block whitespace-nowrap"
           whileHover={{ scale: 1.05 }}
           onClick={() => setActiveSection('hero')}
         >
@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
               onClick={() => setActiveSection(item.id)}
               className={`${
                 activeSection === item.id ? "" : "hover:text-stone-600"
-              } relative rounded-full px-4 py-2 text-sm font-medium text-stone-800 transition focus-visible:outline-2`}
+              } relative rounded-full px-2 sm:px-3 md:px-4 py-2 text-xs sm:text-sm font-medium text-stone-800 transition focus-visible:outline-2 min-w-[60px] sm:min-w-[70px]`}
             >
               {activeSection === item.id && (
                 <motion.span

@@ -52,7 +52,7 @@ const App: React.FC = () => {
 
       <button
         onClick={() => setChatOpen(true)}
-        className="fixed bottom-6 right-6 bg-stone-800 text-white p-4 rounded-full shadow-lg hover:scale-110 hover:bg-stone-900 transition-all duration-300 z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-stone-800 text-white p-3 sm:p-4 rounded-full shadow-lg hover:scale-110 hover:bg-stone-900 transition-all duration-300 z-50"
         aria-label="Ask AI assistant"
       >
         <SearchIcon />
