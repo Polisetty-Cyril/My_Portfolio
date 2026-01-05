@@ -15,9 +15,10 @@ const ResumeSection: React.FC<{ title: string; children: React.ReactNode }> = ({
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
-      className="bg-stone-800 text-white rounded-lg px-4 sm:px-5 md:px-6 py-2 sm:py-3 inline-block mb-4 sm:mb-6 shadow-lg"
+      className="mb-6"
     >
-      <h2 className="text-xl sm:text-2xl font-bold">{title}</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">{title}</h2>
+      <div className="h-1 w-16 bg-gray-900 mt-2 rounded-full"></div>
     </motion.div>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -34,30 +35,31 @@ const Resume: React.FC<ResumeProps> = ({ onBack }) => {
   const { resume: resumeData, name, contact } = PORTFOLIO_DATA;
 
   return (
-    <div className="container mx-auto px-3 sm:px-4 pt-16 sm:pt-20 pb-8">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
       <motion.button
         onClick={onBack}
-        className="flex items-center gap-2 mb-6 sm:mb-8 text-amber-600 hover:text-amber-700 transition-colors text-sm sm:text-base"
+        className="flex items-center gap-2 mb-8 text-gray-600 hover:text-gray-900 transition-colors"
         whileHover={{ x: -5 }}
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
       >
         <ArrowLeftIcon />
-        Back to Home
+        <span className="text-sm font-medium">Back to Home</span>
       </motion.button>
       
       <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12">
         {/* Left Scrollable Content */}
         <div className="w-full lg:w-2/3">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="bg-stone-800 text-white p-4 sm:p-6 md:p-8 rounded-2xl mb-6 sm:mb-8 shadow-2xl">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">{name}</h1>
-            </div>
-
-            <div className="bg-[#EAE6E1] p-4 sm:p-6 md:p-8 rounded-2xl mb-6 sm:mb-8 shadow-lg">
-              <p className="text-sm sm:text-base text-stone-700">{resumeData.summary}</p>
+            <div className="mb-8 sm:mb-12">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">{name}</h1>
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">{resumeData.summary}</p>
             </div>
 
             <ResumeSection title="Experience">
@@ -89,10 +91,17 @@ const Resume: React.FC<ResumeProps> = ({ onBack }) => {
             </ResumeSection>
 
             <ResumeSection title="Skills">
-               <div className="flex flex-wrap gap-2 sm:gap-3">
-                 {resumeData.skills.map((skill, index) => (
-                   <div key={index} className="bg-white py-1.5 sm:py-2 px-3 sm:px-4 rounded-full shadow-sm border border-stone-200 text-stone-700 font-medium text-xs sm:text-sm">
-                     {skill}
+               <div className="space-y-4">
+                 {Object.entries(resumeData.skills).map(([category, skillsList]) => (
+                   <div key={category}>
+                     <h4 className="font-semibold text-sm text-stone-800 mb-2">{category}</h4>
+                     <div className="flex flex-wrap gap-2 sm:gap-3">
+                       {skillsList.map((skill, index) => (
+                         <div key={index} className="bg-white py-1.5 sm:py-2 px-3 sm:px-4 rounded-full shadow-sm border border-stone-200 text-stone-700 font-medium text-xs sm:text-sm">
+                           {skill}
+                         </div>
+                       ))}
+                     </div>
                    </div>
                  ))}
                </div>
@@ -174,6 +183,7 @@ const Resume: React.FC<ResumeProps> = ({ onBack }) => {
             />
           </motion.div>
         </div>
+      </div>
       </div>
     </div>
   );
