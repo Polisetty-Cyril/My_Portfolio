@@ -7,8 +7,19 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full flex-shrink-0 border-t border-stone-200 bg-white/50 mt-8">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-stone-500">
+    <footer className="w-full flex-shrink-0 bg-white/50 mt-0 relative">
+      {/* Cityscape Image */}
+      <div className="w-full overflow-hidden">
+        <img 
+          src="/cityscape.png" 
+          alt="Cityscape" 
+          className="w-full h-auto object-cover opacity-60 block"
+        />
+      </div>
+      
+      {/* Footer Content - Overlaid on cityscape */}
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white/95 to-transparent backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-stone-700">
         <div>
           <h3 className="font-bold text-stone-800 mb-1 sm:mb-2 text-sm sm:text-base">Phone</h3>
           <p className="break-words">{PORTFOLIO_DATA.contact.phone}</p>
@@ -25,9 +36,10 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="col-span-2 md:col-span-1 md:text-right text-center">
-          <p>&copy; {currentYear} By {PORTFOLIO_DATA.name}</p>
+          <p className="font-semibold">&copy; {currentYear} By {PORTFOLIO_DATA.name}</p>
           <p className="mt-1">Powered and secured by React</p>
         </div>
+      </div>
       </div>
     </footer>
   );
