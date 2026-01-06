@@ -1,13 +1,23 @@
+---
+title: Polisetty Cyril Portfolio
+emoji: 💼
+colorFrom: gray
+colorTo: blue
+sdk: static
+pinned: false
+---
+
 <div align="center">
 
 # 🚀 My Portfolio
 
 ### A Modern, AI-Powered Personal Portfolio
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://your-portfolio-url.com)
-[![Built with React](https://img.shields.io/badge/React-18.x-61dafb.svg)](https://reactjs.org/)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-View_Portfolio-blue?style=for-the-badge)](https://huggingface.co/spaces/CyrilPolisetty/portfolio)
+
+[![Built with React](https://img.shields.io/badge/React-19.x-61dafb.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
-[![Powered by Gemini AI](https://img.shields.io/badge/AI-Gemini-orange.svg)](https://ai.google.dev/)
+[![Vite](https://img.shields.io/badge/Vite-6.x-646CFF.svg)](https://vitejs.dev/)
 
 </div>
 
@@ -15,21 +25,21 @@
 
 ## ✨ Features
 
-🎨 **Modern UI/UX** - Clean, responsive design that works seamlessly across all devices  
-🤖 **AI-Powered Chat** - Interactive AI assistant powered by Google's Gemini API  
+🎨 **Modern UI/UX** - Clean, responsive design with Apple-inspired aesthetics  
+🤖 **AI-Powered Chat** - Interactive AI assistant for portfolio Q&A  
 ⚡ **Lightning Fast** - Built with Vite for optimal performance  
 🎯 **Fully Typed** - Type-safe codebase with TypeScript  
 📱 **Mobile First** - Optimized for mobile, tablet, and desktop experiences  
-🌙 **Smooth Animations** - Engaging user interactions and transitions  
+🌙 **Smooth Animations** - Engaging user interactions with Framer Motion  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework:** React 18 with TypeScript
-- **Build Tool:** Vite
-- **AI Integration:** Google Gemini AI
-- **Styling:** Modern CSS with responsive design
+- **Frontend Framework:** React 19 with TypeScript
+- **Build Tool:** Vite 6.x
+- **Animations:** Framer Motion
+- **Styling:** Tailwind CSS with custom design system
 - **Icons:** Custom SVG components
 
 ---
@@ -137,7 +147,7 @@ This project is open source and available under the [MIT License](LICENSE).
 **Cyril Polisetty**
 
 - GitHub: [@Polisetty-Cyril](https://github.com/Polisetty-Cyril)
-- Portfolio: [View Live](https://your-portfolio-url.com)
+- Portfolio: [View Live](https://huggingface.co/spaces/CyrilPolisetty/portfolio)
 
 ---
 
