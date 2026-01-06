@@ -6,7 +6,7 @@ export const PORTFOLIO_DATA = {
   // === Personal Information ===
   name: "Polisetty Cyril",
   title: "Data Scientist",
-  profileImage: "https://avatars.githubusercontent.com/u/195519681?v=4", // GitHub profile image
+  profileImage: "/Cyril.jpg", // Local profile image
   about: "Passionate Data Scientist specializing in deep learning, machine learning, and statistical analysis to extract insights from complex datasets. Currently pursuing B.Tech in Computer Science at Keshav Memorial College of Engineering. I love training Deep Neural Networks on large datasets and creating data-driven solutions that solve real-world problems through advanced analytics and predictive modeling.",
   
   // === Contact & Social Media ===
@@ -22,7 +22,7 @@ export const PORTFOLIO_DATA = {
   // === Resume Section ===t 
   // This data populates the new, detailed resume page.
   resume: {
-    profileImage: "https://avatars.githubusercontent.com/u/195519681?v=4",
+    profileImage: "/Cyril.jpg",
     summary: "Ambitious Computer Science student with strong expertise in data science, machine learning, and statistical modeling. Specializing in data analysis, predictive modeling, NLP, and extracting actionable insights from complex datasets. Proven track record in building data-driven solutions and machine learning models. Seeking opportunities to leverage data science techniques to solve complex real-world challenges and drive business decisions.",
     experience: [
       {
@@ -38,12 +38,13 @@ export const PORTFOLIO_DATA = {
       },
       {
         title: "Open Source Contributor",
-        company: "GitHub",
+        company: "Google Summer of Code",
         date: "2024 - Present",
         description: [
-          "Active contributor to AI and legal-tech projects with multiple repository forks and contributions",
-          "Achieved Pull Shark badge for significant pull request contributions",
-          "Collaborated on projects involving AI Shield, Vakil legal assistant, and RAG-based systems",
+          "Developed tools for converting chemical nomenclature between SMILES (Simplified Molecular Input Line Entry System) and IUPAC naming conventions",
+          "Implemented bidirectional conversion algorithms to translate SMILES notation to IUPAC names and vice versa",
+          "Contributed to open-source cheminformatics projects, enhancing molecular structure representation and standardization",
+          "Collaborated with the open-source community to improve chemical data processing and molecular notation systems",
         ],
       },
     ],
@@ -55,20 +56,24 @@ export const PORTFOLIO_DATA = {
         details: "Currently in 3rd Year | CGPA: 7.8 | Focus: Artificial Intelligence & Machine Learning",
       },
     ],
-    skills: [ 
-      "Python", "R", "SQL", "Java", "C++",
-      "Machine Learning", "Deep Learning", "Statistical Analysis", "Data Visualization",
-      "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "PyTorch",
-      "Data Mining", "Predictive Modeling", "NLP", "Feature Engineering",
-      "Tableau", "Power BI", "Matplotlib", "Seaborn",
-      "PostgreSQL", "MongoDB", "Big Data", "Git", "Jupyter Notebook"
-    ],
+    skills: {
+      "Programming & Development": [
+        "Python", "SQL", "Java", "Git", "GitHub"
+      ],
+      "Technical Skills & Tools": [
+        "Machine Learning", "Deep Learning", "Statistical Analysis", "Data Visualization",
+        "Pandas", "NumPy", "Scikit-learn", "PyTorch",
+        "Predictive Modeling", "NLP", "Feature Engineering",
+        "Matplotlib",
+        "MongoDB", "Jupyter Notebook", "Google Colab"
+      ],
+      "Soft Skills & Qualities": [
+        "Analytical Thinking", "Problem Solving", "Research & Development",
+        "Data-Driven Decision Making", "Attention to Detail", "Continuous Learning",
+        "Team Collaboration", "Effective Communication", "Leadership"
+      ]
+    },
     achievements: [
-      {
-        title: "Pull Shark Achievement",
-        source: "GitHub",
-        description: "Recognized for significant contributions through pull requests to open-source projects, demonstrating collaborative development skills and code quality.",
-      },
       {
         title: "ARAGOG RAG Framework",
         source: "Personal Project",
@@ -89,35 +94,45 @@ export const PORTFOLIO_DATA = {
       title: "ARAGOG - RAG Evaluation Framework",
       description: "An automated framework for evaluating RAG (Retrieval-Augmented Generation) outputs on answer similarity and retrieval relevance without human labeling. Built using advanced NLP techniques and machine learning models.",
       imageUrl: "https://picsum.photos/seed/aragog/600/400",
-      technologies: ["Python", "Jupyter Notebook", "NLP", "Machine Learning", "RAG"],
+      technologies: ["Python", "Jupyter Notebook", "MoE", "Machine Learning", "RAG", "React", "FastAPI"],
+      demoUrl: "https://huggingface.co/spaces/CyrilPolisetty/aragog-medical-ai",
+      sourceCode: "https://github.com/Polisetty-Cyril/ARAGOG",
     },
     {
       id: 2,
-      title: "Voice Assistant Legal AI",
-      description: "AI-powered legal voice assistant featuring real-time voice interaction, legal Q&A capabilities, and intelligent document processing. Enables users to access legal information through natural voice commands.",
-      imageUrl: "https://picsum.photos/seed/voicelegal/600/400",
-      technologies: ["Python", "Speech Recognition", "NLP", "FastAPI", "Machine Learning"],
+      title: "RAG-based Legal Q&A System",
+      description: "ArguLex – Comprehensive AI-powered legal assistant using RAG and GANs to simplify law for the public and enhance legal argumentation for professionals. Features document summarization and intelligent Q&A.",
+      imageUrl: "https://picsum.photos/seed/argulex/600/400",
+      technologies: ["Python", "RAG", "PyTorch", "Machine Learning", "React"],
+      demoUrl: "https://argulex.vercel.app",
+      sourceCode: "https://github.com/Polisetty-Cyril/ArguLex",
     },
     {
       id: 3,
+      title: "Voice Assistant Legal AI",
+      description: "AI-powered legal voice assistant featuring real-time voice interaction, legal Q&A capabilities, and intelligent document processing. Enables users to access legal information through natural voice commands.",
+      imageUrl: "https://picsum.photos/seed/voicelegal/600/400",
+      technologies: ["Python", "Speech Recognition", "FastAPI", "Machine Learning"],
+      demoUrl: "https://voice-legal-ai.vercel.app",
+      sourceCode: "https://github.com/Polisetty-Cyril/Voice-Assistant-Legal-AI",
+    },
+    {
+      id: 4,
       title: "Vakil - Legal Document Demystifier",
       description: "Generative AI application designed to demystify legal documents, making complex legal language accessible to everyone. Features document analysis, summarization, and explanation capabilities.",
       imageUrl: "https://picsum.photos/seed/vakil/600/400",
       technologies: ["TypeScript", "React", "OpenAI", "NLP", "Document Processing"],
+      demoUrl: "https://vakil-legal.vercel.app",
+      sourceCode: "https://github.com/Polisetty-Cyril/Vakil",
     },
     {
-      id: 4,
+      id: 5,
       title: "AI-Shield",
       description: "Security-focused AI project aimed at protecting systems through intelligent threat detection and prevention. Implements machine learning algorithms for anomaly detection and security monitoring.",
       imageUrl: "https://picsum.photos/seed/aishield/600/400",
       technologies: ["JavaScript", "Machine Learning", "Security", "Node.js"],
-    },
-    {
-      id: 5,
-      title: "RAG-based Legal Q&A System",
-      description: "ArguLex – Comprehensive AI-powered legal assistant using RAG and GANs to simplify law for the public and enhance legal argumentation for professionals. Features document summarization and intelligent Q&A.",
-      imageUrl: "https://picsum.photos/seed/argulex/600/400",
-      technologies: ["Python", "RAG", "GANs", "NLP", "TensorFlow"],
+      demoUrl: "https://ai-shield-demo.vercel.app",
+      sourceCode: "https://github.com/Polisetty-Cyril/AI-Shield",
     },
   ],
 
@@ -141,18 +156,17 @@ export const PORTFOLIO_DATA = {
       - Summary: Ambitious Computer Science student specializing in data science, machine learning, statistical analysis, and predictive modeling. Strong foundation in data analysis, visualization, and building data-driven solutions.
 
       Key Skills:
-      - Programming: Python, R, SQL, Java, C++
+      - Programming: Python, SQL, Java
       - Data Science: Machine Learning, Deep Learning, Statistical Analysis, Data Visualization, Predictive Modeling
-      - Data Tools: Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Tableau, Power BI, Matplotlib, Seaborn
-      - Database: PostgreSQL, MongoDB, Big Data
-      - Tools: Git, Jupyter Notebook, Feature Engineering, Data Mining
-
+      - Data Tools: Pandas, NumPy, Scikit-learn, PyTorch, Matplotlib
+      - Database: MongoDB
+      - Tools: Git, GitHub, Jupyter Notebook, Google Colab, Feature Engineering
       Notable Projects:
       - ARAGOG: Automated RAG evaluation framework for assessing answer similarity and retrieval relevance (1 star, 4 forks on GitHub)
       - Voice Assistant Legal AI: AI-powered legal voice assistant with real-time interaction and Q&A capabilities
       - Vakil: Generative AI for demystifying legal documents
       - AI-Shield: Security-focused AI for intelligent threat detection
-      - RAG-based Legal Q&A (ArguLex): Comprehensive legal assistant using RAG and GANs
+      - RAG-based Legal Q&A (ArguLex): Comprehensive legal assistant using RAG and PyTorch
 
       Education:
       - B.Tech in Computer Science, Keshav Memorial College of Engineering (2023-2027)
@@ -160,7 +174,6 @@ export const PORTFOLIO_DATA = {
       - Focus: Artificial Intelligence & Machine Learning
 
       Achievements:
-      - GitHub Pull Shark Achievement for significant open-source contributions
       - Developed multiple AI-powered legal-tech applications
       - Active open-source contributor with multiple repository contributions
       - Specialized in RAG systems and deep learning applications
