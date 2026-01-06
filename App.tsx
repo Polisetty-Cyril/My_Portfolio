@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { SearchIcon } from './components/icons/SearchIcon';
 import AIChatModal from './components/AIChatModal';
+import { PORTFOLIO_DATA } from './constants';
 
 export type Section = 'hero' | 'resume' | 'projects' | 'contact';
 
@@ -31,6 +32,26 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-[#FDFBF8] min-h-screen text-stone-800 font-sans flex flex-col">
+      {/* Fixed Profile Card - Top Left */}
+      <motion.div 
+        className="fixed top-6 left-6 z-40"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <div className="flex items-center gap-3">
+          <img 
+            src={PORTFOLIO_DATA.profileImage} 
+            alt={PORTFOLIO_DATA.name}
+            className="w-12 h-12 rounded-full object-cover border-2 border-gray-300"
+          />
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900">{PORTFOLIO_DATA.name}</h3>
+            <p className="text-xs text-gray-600">{PORTFOLIO_DATA.title}</p>
+          </div>
+        </div>
+      </motion.div>
+
       <Header activeSection={activeSection} setActiveSection={setActiveSection} />
       
       <main className="flex-grow flex items-center justify-center p-4 sm:p-6 md:p-8">
