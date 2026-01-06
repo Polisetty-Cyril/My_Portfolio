@@ -1,33 +1,44 @@
-
-import { GoogleGenAI } from "@google/genai";
-
-const API_KEY = process.env.API_KEY;
-
-if (!API_KEY) {
-  // In a real app, you'd handle this more gracefully.
-  // For this context, we assume the API key is set in the environment.
-  console.error("Gemini API key not found. Please set the API_KEY environment variable.");
-}
-
-const ai = new GoogleGenAI({ apiKey: API_KEY! });
+// Local AI chat service - no API key required
+// Answers questions based on portfolio data
 
 export async function runChatQuery(prompt: string, context: string): Promise<string> {
-  if (!API_KEY) {
-    return "Error: Gemini API key is not configured. The site owner needs to set it up.";
+  const lowerPrompt = prompt.toLowerCase();
+  
+  // Extract relevant information from context
+  const skillsMatch = context.match(/Skills:\s*([^]*?)(?=Experience:|$)/);
+  const projectsMatch = context.match(/Projects:\s*([^]*?)(?=Experience:|$)/);
+  const experienceMatch = context.match(/Experience:\s*([^]*?)(?=Education:|$)/);
+  const educationMatch = context.match(/Education:\s*([^]*?)(?=$)/);
+  
+  // Skills-related questions
+  if (lowerPrompt.includes('skill') || lowerPrompt.includes('technology') || lowerPrompt.includes('know')) {
+    const skills = skillsMatch ? skillsMatch[1] : '';
+    return `Based on the portfolio, here are the skills:\n\n${skills}\n\nThese skills span across programming, technical tools, and soft skills, making for a well-rounded data science and development profile.`;
   }
   
-  try {
-    const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
-      contents: prompt,
-      config: {
-        systemInstruction: context,
-      },
-    });
-    
-    return response.text;
-  } catch (error) {
-    console.error("Error calling Gemini API:", error);
-    return "Sorry, I encountered an error while processing your request. Please try again.";
+  // Project-related questions
+  if (lowerPrompt.includes('project') || lowerPrompt.includes('built') || lowerPrompt.includes('created')) {
+    const projects = projectsMatch ? projectsMatch[1] : '';
+    return `Here are the projects from the portfolio:\n\n${projects}\n\nThese projects demonstrate expertise in machine learning, data analysis, and full-stack development.`;
   }
+  
+  // Experience-related questions
+  if (lowerPrompt.includes('experience') || lowerPrompt.includes('work') || lowerPrompt.includes('job')) {
+    const experience = experienceMatch ? experienceMatch[1] : '';
+    return `Professional experience:\n\n${experience}\n\nThis experience showcases work in computational chemistry and molecular informatics.`;
+  }
+  
+  // Education-related questions
+  if (lowerPrompt.includes('education') || lowerPrompt.includes('study') || lowerPrompt.includes('degree') || lowerPrompt.includes('university')) {
+    const education = educationMatch ? educationMatch[1] : '';
+    return `Educational background:\n\n${education}`;
+  }
+  
+  // Contact/About questions
+  if (lowerPrompt.includes('contact') || lowerPrompt.includes('reach') || lowerPrompt.includes('email') || lowerPrompt.includes('who')) {
+    return `This is Polisetty Cyril's portfolio. You can reach out through:\n\n📧 Email: polisetty6@gmail.com\n📱 Phone: +91 8978494395\n📍 Location: Kurnool, Andhra Pradesh, India\n\nConnect on social media through the links in the Contact section!`;
+  }
+  
+  // General/default response
+  return `I can help you learn about Cyril's portfolio! Here's what I can tell you about:\n\n• Skills and Technologies\n• Projects and Work\n• Professional Experience\n• Educational Background\n• Contact Information\n\nFeel free to ask me anything specific about these topics!`;
 }
