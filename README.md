@@ -3,7 +3,8 @@ title: Polisetty Cyril Portfolio
 emoji: 💼
 colorFrom: gray
 colorTo: blue
-sdk: static
+sdk: docker
+app_port: 3000
 pinned: false
 ---
 
