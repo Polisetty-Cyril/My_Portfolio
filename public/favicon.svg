@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Chain connecting beads (circle) -->
+  <circle cx="50" cy="50" r="26" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="2,2"/>
+  
+  <!-- Rosary Beads with glass effect -->
+  <defs>
+    <radialGradient id="glassGradient" cx="30%" cy="30%">
+      <stop offset="0%" style="stop-color:#f3f4f6;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#d1d5db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 12 Beads around the circle -->
+  <circle cx="50" cy="24" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="63.2" cy="27.7" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="72.3" cy="37.7" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="76" cy="50" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="72.3" cy="62.3" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="63.2" cy="72.3" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="50" cy="76" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="36.8" cy="72.3" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="27.7" cy="62.3" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="24" cy="50" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="27.7" cy="37.7" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  <circle cx="36.8" cy="27.7" r="3.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  
+  <!-- Curved chain connecting to cross (from bottom bead with curves) -->
+  <path d="M 50 76 Q 48 79, 49 82" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="1,1"/>
+  
+  <!-- Center medallion bead (larger) -->
+  <circle cx="49" cy="85" r="4" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  
+  <!-- Curved chain from medallion to cross with more organic flow -->
+  <path d="M 49 89 Q 51 91, 50 93" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="1,1"/>
+  
+  <!-- Glass Cross -->
+  <g>
+    <!-- Vertical bar -->
+    <rect x="48.5" y="93" width="3" height="6" rx="0.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+    <!-- Horizontal bar -->
+    <rect x="46" y="95" width="8" height="2.5" rx="0.5" fill="url(#glassGradient)" stroke="#9ca3af" stroke-width="0.5"/>
+  </g>
+</svg>
