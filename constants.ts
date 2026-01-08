@@ -139,10 +139,11 @@ export const PORTFOLIO_DATA = {
   // === AI Chat Assistant Settings ===
   aiChat: {
     starterPrompts: [
-      "What are Cyril's data science specializations?",
-      "Tell me about the ARAGOG project",
-      "What data science tools does Cyril use?",
-      "What are his data analysis achievements?",
+      "How does Cyril handle large datasets?",
+      "Tell me about his model deployment experience",
+      "Which projects use MongoDB for data storage?",
+      "What's his problem-solving approach?",
+      "Why should we hire Cyril?",
     ],
     // This context is fed to the AI to answer questions about you.
     // It's automatically built from the resume data above, so you only need to edit it there.
