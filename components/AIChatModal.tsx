@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { PORTFOLIO_DATA } from '../constants';
-import { runChatQuery } from '../services/geminiService';
+import { runChatQuery } from '../services/ragChatService';
 import type { ChatMessage } from '../types';
 import { UserIcon } from './icons/UserIcon';
 import { SparklesIcon } from './icons/SparklesIcon';
