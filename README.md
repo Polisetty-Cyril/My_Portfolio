@@ -14,7 +14,7 @@ pinned: false
 
 ### A Modern, AI-Powered Personal Portfolio
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-View_Portfolio-blue?style=for-the-badge)](https://huggingface.co/spaces/CyrilPolisetty/portfolio)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-View_Portfolio-blue?style=for-the-badge)](https://huggingface.co/spaces/CyrilPolisetty/Portfolio)
 
 [![Built with React](https://img.shields.io/badge/React-19.x-61dafb.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
