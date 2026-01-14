@@ -119,8 +119,8 @@ const Resume: React.FC<ResumeProps> = ({ onBack }) => {
 
             <ResumeSection title="Download Resume">
               <motion.a
-                href="/Polisetty_Cyril_Resume.pdf"
-                download="Polisetty_Cyril_Resume.pdf"
+                href="/POLISETTY CYRIL RESUME.pdf"
+                download="POLISETTY_CYRIL_RESUME.pdf"
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl shadow-lg transition-all duration-300 text-sm sm:text-base"
                 whileHover={{ 
                   scale: 1.05,
