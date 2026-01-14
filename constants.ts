@@ -6,7 +6,7 @@ export const PORTFOLIO_DATA = {
   // === Personal Information ===
   name: "Polisetty Cyril",
   title: "Data Scientist",
-  profileImage: "/Cyril.jpg", // Local profile image
+  profileImage: "/Polisetty_Cyril.jpg", // Local profile image
   about: "Passionate Data Scientist specializing in deep learning, machine learning, and statistical analysis to extract insights from complex datasets. Currently pursuing B.Tech in Computer Science at Keshav Memorial College of Engineering. I love training Deep Neural Networks on large datasets and creating data-driven solutions that solve real-world problems through advanced analytics and predictive modeling.",
   
   // === Contact & Social Media ===
@@ -22,7 +22,7 @@ export const PORTFOLIO_DATA = {
   // === Resume Section ===t 
   // This data populates the new, detailed resume page.
   resume: {
-    profileImage: "/Cyril.jpg",
+    profileImage: "/Polisetty_Cyril.jpg",
     summary: "Ambitious Computer Science student with strong expertise in data science, machine learning, and statistical modeling. Specializing in data analysis, predictive modeling, NLP, and extracting actionable insights from complex datasets. Proven track record in building data-driven solutions and machine learning models. Seeking opportunities to leverage data science techniques to solve complex real-world challenges and drive business decisions.",
     experience: [
       {
